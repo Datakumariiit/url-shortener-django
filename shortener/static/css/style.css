@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="url"] {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+#result p {
+    margin-top: 0;
+    color: #555;
+}
+
+#short-url-display {
+    display: block;
+    word-break: break-all;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#short-url-display:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
